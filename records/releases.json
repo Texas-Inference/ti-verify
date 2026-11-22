@@ -1,0 +1,28 @@
+[
+  {
+    "accepted_tcb": [],
+    "hosts": [
+      "cvm-staging.texasinference.ai"
+    ],
+    "image_digest": "sha256:5a3e02bb03b4ed0de9fd42598376b9451895d8ed12c2c6d6c1f901c0bac37471",
+    "machine_type": "c3-standard-4",
+    "mr_config_id": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "mr_owner": "cf96054a23593048877027ac5649f855a72d7163b56cda7ccc55c8085d323b8b1255173d4dd39b2d6b5b96d3b8106b20",
+    "mr_owner_config": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "mr_owner_unpinned": true,
+    "mrtd": "f21e6b48743fe14c2d090078ca1197f09ae4c99438677f2c79901ef80e2aeefe2f9a7eb6e3eb3b5047c4f1511731e5d3",
+    "platform": "gcp-tdx",
+    "rtmr0": "22c5217f75dbbb98f912f0aaa4cdeba32df4c197d9a114874f30f1853c3337f76dad3b19b08426bde5baeff22a692822",
+    "rtmr1": "9ba05570cd3e51042f91d02ea52ff4846ab611c3b8763f9fcb5cb3c3b913bf78472cc4de79eef6dda5156e81e270bf2c",
+    "rtmr2": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "secure_boot_cert_sha256": "761dc99d31b73a0c643bc90b48503291c20c07b2d31eb2df597e245113559605",
+    "staging": true,
+    "td_attributes": "0000001000000000",
+    "uki_authenticode_sha384": "87de75eb19213fc273560529ad1f89e6d0f521d6be456d01f385d28a9f79cbaf77b5dd5a06b48a5166bfa1fcc9836f70",
+    "uki_cmdline": "roothash=7ab8b71d42fe1abb8d458a44207b04346bc3c38e15fe68b696be843a0b07b935 rd.shell=0 rd.emergency=reboot panic=10 systemd.gpt_auto=0 rd.systemd.gpt_auto=0 systemd.swap=0 systemd.import_credentials=no lockdown=confidentiality module.sig_enforce=1 quiet loglevel=0 systemd.show_status=0 systemd.verity_root_options=panic-on-corruption efi_pstore.pstore_disable=1 ipv6.disable=1",
+    "valid_from": 1795117258,
+    "valid_until": 1797709258,
+    "version": "0.1.0-staging",
+    "xfam": "e702060000000000"
+  }
+]

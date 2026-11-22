@@ -1,0 +1,8 @@
+# ti-verify release signers (AB-152, memo 197 section 3). One line per key:
+#   release@texasinference.ai namespaces="ti-verify-release" ssh-ed25519 AAAA...
+# Cooper created both keys on 22 Nov 2026 (runbook 9.1). Either key signs a valid release.
+# Fingerprints (runbook 9.1 prints them): published on the Texas Inference website (AB-155).
+# Daily key, held in 1Password and used through its SSH agent. SHA256:nAcZvXoVd75X9LBCTzAedNnCfyBSAxmeG7fUMOzQkWc
+release@texasinference.ai namespaces="ti-verify-release" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO1EFvPt1SjdXIL8HX8c+h8MfO1zH/I+BHy5ojZq4olP
+# Backup key, a passphrase-protected file stored in 1Password apart from the daily key. SHA256:LLwEuHDZ+RSi6bMWGVfgNE/xiZe1iQEoIus3aFb9Es8
+release@texasinference.ai namespaces="ti-verify-release" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGnkX/9ofSRCN6+fvA+c73ZE3DleF4esf09OaSrmxumz

@@ -1,0 +1,29 @@
+[package]
+name = "ti-verify"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+ti-tdx = { path = "../ti-tdx" }
+anyhow.workspace = true
+base64.workspace = true
+hex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+getrandom.workspace = true
+x509-parser.workspace = true
+rustls.workspace = true
+rustls-pemfile.workspace = true
+webpki-roots.workspace = true
+dcap-qvl.workspace = true
+tokio = { workspace = true }
+
+[dev-dependencies]
+sha2.workspace = true
+ti-tdx = { path = "../ti-tdx", features = ["testkit"] }
+rustls-pemfile.workspace = true
+
+[features]
+testkit = ["ti-tdx/testkit"]
