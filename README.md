@@ -21,18 +21,12 @@ and `SHA256SUMS`, `SHA256SUMS.sig`, `allowed_signers` and `release.json`.
 
 ## 2. Check that the files are ours
 
-`allowed_signers` holds our release keys. The first time, compare their fingerprints with the ones on the Texas Inference website's verification page:
+Check a release with our release keys as the Texas Inference website publishes them, not with the `allowed_signers` file in the download. Listing the fingerprints of that file is not enough: the listing skips lines it cannot parse without a warning, so a doctored `allowed_signers` can hide an extra key that `ssh-keygen -Y verify` still accepts.
+
+Copy the two key lines from https://texasinference.ai/proof#release-keys into a file named `texas-inference-keys` in the folder with the release files. Keep that file for later releases. Then:
 
 ```
-grep -v '^#' allowed_signers | cut -d' ' -f3,4 | ssh-keygen -lf -
-```
-
-It prints one `SHA256:` line per key.
-
-Keep your copy. A later release whose `allowed_signers` changes without notice from us is a reason to stop. Then:
-
-```
-ssh-keygen -Y verify -f allowed_signers -I release@texasinference.ai -n ti-verify-release -s SHA256SUMS.sig < SHA256SUMS
+ssh-keygen -Y verify -f texas-inference-keys -I release@texasinference.ai -n ti-verify-release -s SHA256SUMS.sig < SHA256SUMS
 ```
 
 The output must start with `Good "ti-verify-release" signature for release@texasinference.ai`. Then check your files against the signed sums:
